@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  font-family: 'Acme', sans-serif;
+  background-image: url(body_background.jpg);
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+
+
+a, footer p, footer h2 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, .argomento, .box .servizi, .fot {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  background-image: url(background.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+header .option {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 30px;
+  display: none;
+}
+
+header .option .linea {
+  width: 50px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 178, 60);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+header #testo {
+  display: flex;
+  color: white;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 3em;
+  text-align: center;
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .menu {
+  margin: 50px;
+  font-size: 20px
+}
+
+header nav a {
+  margin: 20px;
+  background-color: rgba(255, 178, 60, 0.7);
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+header #logo {
+  width: 175px;
+  margin: 5px 0 0 20px;
+}
+
+
+
+.argomento, .servizi, .titolo1, .box {
+  border-radius: 20px;
+}
+
+.argomento {
+  background-color: rgb(246, 233, 255);
+  margin: 5%;
+}
+
+.titolo1 h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.box {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.servizi_img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.servizi h2 {
+  text-align: center;
+}
+
+.servizi p {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+.box .servizi {
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(60, 66, 78);
+}
+
+.foot {
+  margin: 10px;
+  width: 20%;
+}
+
+.footer_content {
+  display: flex;
+  align-items: center;
+}
+
+.foot img {
+  width: 30px;
+}
+
+#text_footer {
+  color: rgb(205, 205, 205);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.unict {
+  display: flex;
+  width: 60%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-style: oblique;
+}
+
+.unict p {
+  margin-right: 20px;
+}
+
+@media (max-width:400px) {
+  .menu {
+    display: none;
+  }
+
+  header .option {
+    display: flex;
+  }
+
+  header .logo {
+    width: 50px;
+  }
+
+  header #logo {
+    width: 125px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .servizi_img {
+    margin-top: 25px;
+  }
+
+  .servizi p {
+    margin-top: 0px;
+  }
+
+  .servizi h2 {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .foot, .unict {
+    width: auto;
+  }
+}
+
+@media (max-width:700px) {
+  .menu {
+    display: none;
+  }
+
+  header .option {
+    display: flex;
+  }
+
+  header .logo {
+    width: 50px;
+  }
+
+  header #logo {
+    width: 125px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .servizi_img {
+    margin-top: 25px;
+  }
+
+  .servizi p {
+    margin-top: 0px;
+  }
+
+  .servizi h2 {
+    margin-bottom: 0px;
+  }
+}
